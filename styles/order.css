@@ -1,0 +1,111 @@
+.row {
+    display: flex;
+   align-items: center;
+  justify-content: center;
+flex-wrap: wrap;
+}
+
+.column {
+  vertical-align: middle;
+}
+
+.column img {
+    display: block;
+position: relative;
+    height: 250px;
+flex: 33%;
+padding: 0px 30px;
+}
+
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 15%; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #ffffff; /* White */
+    overflow-x: auto; /* Disable horizontal scroll */
+    padding-top: 20px;
+    outline: solid;
+    outline-width: 1px;
+    outline-color: #079b69;
+    margin: auto;
+  }
+
+  .sidenav img {
+    width: auto;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .banner {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background: #f7f7f7;
+  }
+  
+  
+  .btn-bgstroke {
+    font-size: 15px;
+    display: inline-block;
+    background-color: #0b5a35;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    margin-top: 30px; 
+    color: #ffffff;
+  }
+  
+  .btn-bgstroke:hover {
+    background-color: #079b69;
+  }
+
+  /* Container needed to position the overlay. */
+.containerForOverlay {
+    position: relative;
+    width: 80%;
+    height: 30%;
+    
+  }
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 100%;
+    height: 90%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .containerForOverlay:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlayButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: 20%;
+    padding: 0;
+    
+  }
+
+  .overlayButton img {
+    width: 35%;
+    filter: brightness(1.75);
+    filter: contrast(1.75);
+  } 

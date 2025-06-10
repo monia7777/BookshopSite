@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookshop</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="slike i ikone\small_book_icon.png">
+    <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/order.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body class="content">
+    <header class="header primary-color-bg">
+        <nav class="navigation container">
+            <div class="menu">
+                <a href="index.html" class="link menu-item">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="products.html" class="link menu-item"
+                            style="text-decoration: underline">Genres</a></button>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <!--loaded in nav.js-->
+                    </div>
+                </div>
+                <a href="index.html" class="link">
+                    <img class="scaled-image scaled-image-fixed" src="slike i ikone\book_icon.png" alt="Company logo">
+                </a>
+                <a href="contacts.html" class="link menu-item">Contact</a>
+                <a href="cart.html" class="link menu-item cart-menu">
+                    <img src="slike i ikone/shopping_cart_fill_icon.png" alt="Cart icon">
+                    <div class="cart-menu-status">
+                        <div id="cart-items">0</div>
+                        <div>items</div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="main">
+
+        <div class="sidenav">
+            <img src="slike i ikone\scale_iconn.png" alt="scale">
+            <h3 class="main-color-emphasized"> On Inventory</h3>
+            <ol id="inventory-list" style="margin-left: 50px">
+                <!--loaded in orded.js-->
+            </ol>
+            <div class="separator"></div>
+            <img src="slike i ikone\truck_iconn.png" alt="truck">
+            <h3 class="main-color-emphasized"> Delivery notice</h3>
+            <p style="margin-left: 50px">We are delivering all around Europe free of charge, but a surcharge must be
+                payed for international shipping</p>
+        </div>
+
+        <!--loaded in orded.js-->
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="menu menu-distributed">
+                <div class="infobox infobox-marginless infobox-copyright">
+                    <h4 class="infobox-title infobox-title-secondary-color main-color-emphasized">
+                        Copy this as much as you like
+                    </h4>
+                </div>
+                <div class="infobox infobox-marginless infobox-flower">
+                    <h4 class="infobox-title infobox-title-secondary-color main-color-emphasized">
+                        Bookshop
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/order.js"></script>
+    <script src="scripts/nav.js"></script>
+
+
+</body>
+
+</html>

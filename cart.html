@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="slike i ikone\small_book_icon.png" />
+    <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+
+<body class="content body-header-fixed">
+    <header class="header header-fixed primary-color-bg">
+        <nav class="navigation container">
+            <div class="menu">
+                <a href="index.html" class="link menu-item">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="products.html" class="link menu-item">Products</a></button>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <!--loaded in nav.js-->
+                    </div>
+                </div>
+                <a href="index.html" class="link">
+                    <img class="scaled-image scaled-image-fixed" src="slike i ikone\book_icon.png" alt="Company logo">
+                </a>
+                <a href="contacts.html" class="link menu-item">Contact</a>
+                <a href="cart.html" class="link menu-item cart-menu">
+                    <img src="slike i ikone\shopping_cart_fill_icon.png" alt="Cart icon">
+                    <div class="cart-menu-status">
+                        <div id="cart-items">0</div>
+                        <div>items</div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section secondary-color-bg">
+        <div class="container">
+            <div class="centered-container">
+                <h1 class="decorated-title font-secondary main-color"><span class="main-color-emphasized">
+                        Shopping cart</span> items</h1>
+                <div class="separator"></div>
+            </div>
+        </div>
+    </section>
+    <section id="cart-template-header">
+        <div class="cart-header">
+            <div class="cart-header-title">Product</div>
+            <div class="cart-header-title">Price</div>
+            <div class="cart-header-title">Quantity</div>
+            <div class="cart-header-title">Add one item</div>
+            <div class="cart-header-title">Remove one item</div>
+        </div>
+    </section>
+
+    <main class="main">
+
+        <div id="cart-items-list">
+            <!--loaded in cart.js-->
+        </div>
+
+        <div class="cart-header" style="border-top:  1px solid #0b8059ab; border-bottom: none;">
+            <div class="cart-header-title">Total</div>
+            <div class="cart-header-title" id="total-number">0</div>
+            <div class="cart-header-title"></div>
+            <div class="cart-header-title"></div>
+            <div class="cart-header-title"></div>
+        </div>
+
+        <div class="centered-container">
+            <button class="cart-button" onclick="checkout()">CheckOut</button>
+        </div>
+
+        <section class="section secondary-color-bg" style="display: block; width: 100%;">
+            <div class="separator"></div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="menu menu-distributed">
+                <div class="infobox infobox-marginless infobox-copyright">
+                    <h4 class="infobox-title infobox-title-secondary-color main-color-emphasized">
+                        Copy this as much as you like
+                    </h4>
+                </div>
+                <div class="infobox infobox-marginless infobox-flower">
+                    <h4 class="infobox-title infobox-title-secondary-color main-color-emphasized">
+                        Bookshop
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            refreshCart();
+        })
+    </script>
+</body>
+
+</html>
